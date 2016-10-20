@@ -1,0 +1,14 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": "./out",
+        "removeComments": true,
+        "noImplicitAny": true
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
