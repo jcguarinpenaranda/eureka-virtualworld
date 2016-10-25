@@ -1,24 +1,26 @@
 {
-  "name": "eureka-virtualworld",
+  "name": "canvas-drawings-p5",
   "version": "1.0.0",
-  "description": "Eureka virtual world demo",
+  "description": "Real time canvas drawings with p5 js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "eureka",
-    "socket.io"
+    "socket.io",
+    "p5.js",
+    "p5",
+    "canvas",
+    "drawings"
   ],
-  "author": "Juan Camilo Guarin P",
+  "author": "Juan Camilo Guarín P",
   "license": "ISC",
-  "devDependencies": {
-    "browserify": "^13.1.0",
-    "tsify": "^2.0.2",
-    "typescript": "^2.0.3"
-  },
   "dependencies": {
-    "p5": "^0.5.4",
-    "socket.io": "^1.5.0"
+    "express": "^4.14.0",
+    "p5": "^0.5.2",
+    "socket.io": "^1.4.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.0"
   }
 }
