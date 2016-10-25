@@ -21,11 +21,26 @@ function draw() {
     other.draw();
   })
 
+  detectCollisions();
+
   if (keyIsPressed) {
     onKeyPressed();
   }
 
 }
+
+function detectCollisions() {
+  others.forEach(function (other) {
+    var dx = other.pos.x - me.pos.x;
+    var dy = other.pos.y - me.pos.y;
+    var d = Math.sqrt(dx * dx + dy * dy);
+
+    if (d < me.radius + other.radius) {
+      console.log('collided with ' + other.name)
+    }
+  })
+}
+
 
 /**
  * Cada vez que se presiona la tecla
